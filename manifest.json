@@ -1,0 +1,13 @@
+{
+  "configuration": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Search in AD",
+    "type": "object",
+    "properties": {},
+    "required": []
+  },
+  "description": "Search in AD",
+  "name": "Search in AD",
+  "uuid": "4504636c-3d50-46ce-9e91-146aafa356b2",
+  "version": "0.1.0"
+}
