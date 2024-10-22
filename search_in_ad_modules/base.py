@@ -23,8 +23,8 @@ class MicrosoftADAction(Action):
     def client(self):
         server = Server(
             host=self.module.configuration.servername,
-            port=636,
-            use_ssl=True,
+            # port=636,
+            # use_ssl=True,
         )
         conn = Connection(
             server,

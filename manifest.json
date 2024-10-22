@@ -1,10 +1,32 @@
 {
   "configuration": {
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Search in AD",
     "type": "object",
-    "properties": {},
-    "required": []
+    "properties": {
+      "servername": {
+        "title": "Server name",
+        "description": "IP or name of your host",
+        "type": "string"
+      },
+      "admin_username": {
+        "title": "Admin username account",
+        "description": "The username of the account that have necessary permisions to change passwords (e.g admin@example.com )",
+        "type": "string"
+      },
+      "admin_password": {
+        "title": "Password account",
+        "description": "The dedicated password of the account",
+        "type": "string"
+      }
+    },
+    "required": [
+      "servername",
+      "admin_username",
+      "admin_password"
+    ],
+    "secrets": [
+      "admin_password"
+    ]
   },
   "description": "Search in AD",
   "name": "Search in AD",
