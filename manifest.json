@@ -1,6 +1,6 @@
 {
   "configuration": {
-    "title": "Search in AD",
+    "title": "Search in AD 2",
     "type": "object",
     "properties": {
       "servername": {
