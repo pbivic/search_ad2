@@ -1,4 +1,7 @@
-from search_in_ad_modules.search import SearchArguments
+from pydantic import BaseModel, Field
 
-class SearchInAdModuleConfiguration(SearchArguments):
-    pass
+
+class SearchInAdModuleConfiguration(BaseModel):
+    servername: str = Field(..., description="Remote machine IP or Name")
+    admin_username: str = Field(..., description="Admin username")
+    admin_password: str = Field(secret=True, description="Admin password")
