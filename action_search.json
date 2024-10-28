@@ -1,7 +1,7 @@
 {
   "name": "Search in AD",
   "description": "Search in AD",
-  "uuid": "2d3e256e-56a9-4af9-ae1d-11b3d7cb84e2",
+  "uuid": "4a9e6b21-2a4d-47c1-85ed-6f57c03e9e9d",
   "docker_parameters": "search-ad",
   "arguments": {
     "title": "SearchArguments",
