@@ -1,5 +1,4 @@
-from pydantic import BaseModel, Field
+from search_in_ad_modules.search import SearchArguments
 
-
-class SearchInAdModuleConfiguration(BaseModel):
+class SearchInAdModuleConfiguration(SearchArguments):
     pass
