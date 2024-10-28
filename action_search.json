@@ -1,7 +1,7 @@
 {
   "name": "Search in AD",
   "description": "Search in AD",
-  "uuid": "4a9e6b21-2a4d-47c1-85ed-6f57c03e9e9d",
+  "uuid": "4a9e6b21-2a4d-47c1-85ed-6f57c03e9e9k",
   "docker_parameters": "search-ad",
   "arguments": {
     "title": "SearchArguments",
@@ -29,12 +29,8 @@
   },
   "results": {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "items": {
-      "type": "object",
-      "additionalProperties": true
-    },
     "required": [],
     "title": "Results",
-    "type": "array"
+    "type": "string"
   }
 }

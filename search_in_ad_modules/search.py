@@ -13,7 +13,7 @@ class SearchAction(MicrosoftADAction):
     name = "Search"
     description = "Search in your AD"
 
-    def run(self, arguments: SearchArguments) -> dict:
+    def run(self, arguments: SearchArguments) -> str:
         attributes = arguments.attributes or ALL_ATTRIBUTES
         try:
             self.client.search(
@@ -23,5 +23,5 @@ class SearchAction(MicrosoftADAction):
             raise Exception(f"Failed to search in this base {arguments.basedn}")
           
 
-        return self.client.response
+        return str(self.client.response)
 
